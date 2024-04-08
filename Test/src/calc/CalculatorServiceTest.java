@@ -9,14 +9,14 @@ class CalculatorServiceTest {
 
     private Calculator calculator;
     private CalculatorService service;
-    
+
     @BeforeEach
     public void setup() {
         // テスト前にCalculatorとCalculatorServiceをセットアップ
         calculator = new Calculator();
         service = new CalculatorService(calculator);
     }
-    
+
     @Test
     void testAddAndReport() {
         assertEquals("Result: 5", service.addAndReport(2, 3));
